@@ -23,4 +23,5 @@ def carregar_jogo(arquivo):
     except FileNotFoundError:
         return None
     except json.JSONDecodeError:
+        
         return None
