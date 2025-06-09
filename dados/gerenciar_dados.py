@@ -1,27 +1,25 @@
-def salvar_jogo(estado, arquivo):
-    """
-    Salva o estado do jogo em um arquivo.
-    
-    :param estado: Dicionário com o estado do jogo.
-    :param arquivo: Caminho do arquivo onde o estado será salvo.
-    """
-    import json
-    with open(arquivo, 'w') as f:
-        json.dump(estado, f)
+import json
 
-def carregar_jogo(arquivo):
-    """
-    Carrega o estado do jogo de um arquivo.
-    
-    :param arquivo: Caminho do arquivo de onde o estado será carregado.
-    :return: Dicionário com o estado do jogo.
-    """
-    import json
-    try:
-        with open(arquivo, 'r') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        return None
-    except json.JSONDecodeError:
-        
-        return None
+class DadosJogo:
+    def __init__(self, caminho="estado_jogo.json"):
+        self.caminho = caminho
+        self.estado = self.carregar()
+
+    def carregar(self):
+        try:
+            with open(self.caminho, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except:
+            return {}
+
+    def salvar(self):
+        with open(self.caminho, 'w', encoding='utf-8') as f:
+            json.dump(self.estado, f, indent=4, ensure_ascii=False)
+
+    def adicionar_log(self, mensagem):
+        self.estado.setdefault("log", []).append(mensagem)
+        self.salvar()
+
+    def obter_jogador_atual(self):
+        idx = self.estado["jogador_atual"]
+        return self.estado["jogadores"][idx]
