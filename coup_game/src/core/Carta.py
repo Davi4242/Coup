@@ -4,7 +4,7 @@ class Carta:
     self.virada = False
     self.descricao = descricao
 
-#Vamos usar getters(com o @property) e getter, aplicando assim o principio do encapsulamento
+#Vamos usar getters(com o @property), aplicando assim o principio do encapsulamento
 #O _ antes dos atributos dentro dos getters serve pra indicar que são protegidos
 
   @property
