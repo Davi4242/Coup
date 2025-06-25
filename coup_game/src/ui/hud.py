@@ -1,1 +1,0 @@
-# Componentes da interface durante o jogo
