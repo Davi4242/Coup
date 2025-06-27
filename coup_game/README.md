@@ -1,1 +1,0 @@
-# Jogo Coup em Python com Pygame

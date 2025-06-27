@@ -1,5 +1,5 @@
 import pygame
-from setup import TELA, BRANCO, PRETO, CINZA, AZUL_ATIVO, FONTE_TITULO, FONTE_GERAL
+from .setup import TELA, BRANCO, PRETO, CINZA, AZUL_ATIVO, FONTE_TITULO, FONTE_GERAL
 
 # Elementos da UI e estado da Tela de Login
 input_usuario_rect = pygame.Rect(250, 250, 300, 50)

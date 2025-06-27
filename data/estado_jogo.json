@@ -1,0 +1,52 @@
+{
+  "turn_index": 0,
+  "history": [
+    "--- Jogo iniciado! ---",
+    "Humano tenta usar Ajuda Externa",
+    "### Bot 2 bloqueia com Duque!",
+    "Bloqueio aceito. Ação cancelada."
+  ],
+  "players": [
+    {
+      "name": "Humano",
+      "coins": 2,
+      "characters": [
+        "Condessa",
+        "Embaixador"
+      ],
+      "alive": true,
+      "type": "HumanPlayer"
+    },
+    {
+      "name": "Bot 1",
+      "coins": 2,
+      "characters": [
+        "Condessa",
+        "Capitao"
+      ],
+      "alive": true,
+      "type": "AIPlayer"
+    },
+    {
+      "name": "Bot 2",
+      "coins": 2,
+      "characters": [
+        "Duque",
+        "Duque"
+      ],
+      "alive": true,
+      "type": "AIPlayer"
+    },
+    {
+      "name": "Bot 3",
+      "coins": 2,
+      "characters": [
+        "Assassino",
+        "Assassino"
+      ],
+      "alive": true,
+      "type": "AIPlayer"
+    }
+  ],
+  "deck_file": "deck_state.json"
+}
