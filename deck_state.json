@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "character": "Duque",
+      "in_game": false
+    },
+    {
+      "character": "Capitao",
+      "in_game": false
+    },
+    {
+      "id": 7,
+      "character": "Capitao",
+      "in_game": false
+    },
+    {
+      "id": 6,
+      "character": "Assassino",
+      "in_game": false
+    },
+    {
+      "character": "Embaixador",
+      "in_game": false
+    },
+    {
+      "character": "Embaixador",
+      "in_game": false
+    },
+    {
+      "character": "Assassino",
+      "in_game": false
+    }
+  ],
+  "discard_pile": []
+}
